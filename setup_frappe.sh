@@ -331,8 +331,8 @@ setup_bench() {
 		ERPNEXT_APPS_JSON="https://raw.githubusercontent.com/frappe/bench/master/install_scripts/erpnext-apps-master.json"
 	fi
 		
-	run_cmd sudo su $FRAPPE_USER -c "cd /home/$FRAPPE_USER && bench init frappe-bench --frappe-branch v4.13.1"
-    run_cmd sudo su $FRAPPE_USER -c "cd /home/$FRAPPE_USER/frappe-bench && bench get-app erpnext https://github.com/frappe/erpnext --branch v4.13.1"
+	run_cmd sudo su $FRAPPE_USER -c "cd /home/$FRAPPE_USER && bench init frappe-bench --frappe-branch v4.x.x"
+        run_cmd sudo su $FRAPPE_USER -c "cd /home/$FRAPPE_USER/frappe-bench && bench get-app erpnext https://github.com/frappe/erpnext --branch v4.x.x"
 	echo Setting up first site
 	echo /home/$FRAPPE_USER/frappe-bench > /etc/frappe_bench_dir
 	run_cmd sudo su $FRAPPE_USER -c "cd /home/$FRAPPE_USER/frappe-bench && bench new-site site1.local --mariadb-root-password $MSQ_PASS --admin-password $ADMIN_PASS"
