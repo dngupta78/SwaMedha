@@ -14,7 +14,9 @@ Supported for CentOS 6, CentOS 7, Debian 7 and Ubuntu 12.04+
 Open your Terminal and enter:
 
 wget https://raw.githubusercontent.com/dngutpa78/swamedha/master/setup_frappe.sh
+
 sudo bash setup_frappe.sh --setup-production
+
 This script should install the pre-requisites, install bench and setup an ERPNext site. You can then login as Administrator with the Administrator password printed.
 
 If you want to develop ERPNext or any Frappe App, you can omit the "--setup-production" part from the command.
