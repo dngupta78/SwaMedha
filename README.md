@@ -11,7 +11,7 @@ Easy way
 
 Supported for CentOS 6, CentOS 7, Debian 7 and Ubuntu 12.04+
 
-Open your Terminal and enter:
+Open your Terminal and enter:,
 
 wget https://raw.githubusercontent.com/dngutpa78/swamedha/master/setup_frappe.sh
 
